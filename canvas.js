@@ -71,7 +71,7 @@ function animate(){
     let dist = getDistance(circle1.x , circle1.y, circle2.x, circle2.y );
     // console.log(getDistance(circle1.x , circle1.y, circle2.x, circle2.y ));
 
-    if(circle1.rad + circle2.rad > dist){
+    if(dist < circle1.rad + circle2.rad){
         circle2.color = 'Blue';
     }else{
         circle2.color = 'Red';
